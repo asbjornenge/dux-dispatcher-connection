@@ -8,9 +8,19 @@ This module takes a [Dux](https://github.com/asbjornenge/dux) dispatcher hostnam
 
 ## Use
 
-    var ddc  = require('dux-dispatcher-connection')
-    var conn = ddc('dux-dispatcher.dux.test', 8000)
-    conn.on('connect', fn)
-    conn.on('close', fn)
+    var conn = require('dux-dispatcher-connection')({
+        'dispatcher-host' : 'dux-dispatcher.dux.test',
+        'dispatcher-port' : 8000,
+        'interval'        : 5000, // (default 5000)
+        'timeout'         : 500,  // (default 500)
+    })
+    conn.on('up', fn)
+    conn.on('down', fn)
+
+## Changelog
+
+### 1.0.0
+
+* Initial release :tada:
 
 enjoy
