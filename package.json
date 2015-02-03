@@ -1,0 +1,29 @@
+{
+  "name": "dux-dispatcher-connection",
+  "version": "1.0.0",
+  "description": "Dux Dispatcher Connection",
+  "main": "index.js",
+  "dependencies": {
+    "faye": "^1.1.0",
+    "object.assign": "^1.1.1",
+    "retry-connection": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asbjornenge/dux-dispatcher-connection.git"
+  },
+  "keywords": [
+    "dux",
+    "dux-dispatcher"
+  ],
+  "author": "Asbjorn Enge <asbjorn@hanafjedle.net>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/asbjornenge/dux-dispatcher-connection/issues"
+  },
+  "homepage": "https://github.com/asbjornenge/dux-dispatcher-connection"
+}
