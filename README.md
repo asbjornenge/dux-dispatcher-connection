@@ -16,8 +16,13 @@ This module takes a [Dux](https://github.com/asbjornenge/dux) dispatcher hostnam
     })
     conn.on('up', fn)
     conn.on('down', fn)
+    conn.listen()
 
 ## Changelog
+
+### 2.0.1
+
+* Updated README with listen call !important
 
 ### 2.0.0
 
