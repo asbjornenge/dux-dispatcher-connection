@@ -6,10 +6,10 @@ var EE      = require('events').EventEmitter
 var DispatcherConnection = function(options) {
     this.ready    = false
     this.client   = null
-    this.host     = options['dispatcher-host']
-    this.port     = options['dispatcher-port']
-    this.interval = options['retry-interval'] || 5000
-    this.timeout  = options['retry-timeout']  || 500
+    this.host     = options.host
+    this.port     = options.port
+    this.interval = options.interval || 5000
+    this.timeout  = options.timeout  || 500
 }
 DispatcherConnection.prototype =  assign({
 

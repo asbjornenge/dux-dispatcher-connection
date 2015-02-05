@@ -9,15 +9,19 @@ This module takes a [Dux](https://github.com/asbjornenge/dux) dispatcher hostnam
 ## Use
 
     var conn = require('dux-dispatcher-connection')({
-        'dispatcher-host' : 'dux-dispatcher.dux.test',
-        'dispatcher-port' : 8000,
-        'interval'        : 5000, // (default 5000)
-        'timeout'         : 500,  // (default 500)
+        host     : 'dux-dispatcher.dux.test',
+        port     : 8000,
+        interval : 5000, // Retry interval     (default 5000)
+        timeout  : 500,  // Connection timeout (default 500)
     })
     conn.on('up', fn)
     conn.on('down', fn)
 
 ## Changelog
+
+### 2.0.0
+
+* De-argumentified the options :stuck_out_tongue:
 
 ### 1.0.0
 
