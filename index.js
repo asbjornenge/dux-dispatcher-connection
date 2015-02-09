@@ -44,8 +44,8 @@ DispatcherConnection.prototype =  assign({
         return 'http://'+this.host+':'+this.port
     },
 
-    subscribe : function(state, fn) {
-        return this.client.subscribe(state, fn)
+    subscribe : function(path, fn) {
+        return this.client.subscribe(path, fn)
     }
 
 }, EE.prototype)
