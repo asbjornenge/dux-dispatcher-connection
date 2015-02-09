@@ -20,6 +20,10 @@ This module takes a [Dux](https://github.com/asbjornenge/dux) dispatcher hostnam
 
 ## Changelog
 
+### 2.0.2
+
+* .subscribe now returns subscription object
+
 ### 2.0.1
 
 * Updated README with listen call !important

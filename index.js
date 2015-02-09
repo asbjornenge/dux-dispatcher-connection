@@ -45,7 +45,7 @@ DispatcherConnection.prototype =  assign({
     },
 
     subscribe : function(state, fn) {
-        this.client.subscribe(state, fn)
+        return this.client.subscribe(state, fn)
     }
 
 }, EE.prototype)
